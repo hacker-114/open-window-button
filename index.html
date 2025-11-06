@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rebel Cloaked Button</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .rebel-button {
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      color: #00ffe7;
+      background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+      border: 2px solid #00ffe7;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7 inset;
+      transition: all 0.3s ease;
+    }
+
+    .rebel-button:hover {
+      background: #00ffe7;
+      color: #0f0f0f;
+      box-shadow: 0 0 20px #00ffe7, 0 0 30px #00ffe7 inset;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="rebel-button" onclick="openSmallWindow('https://sites.google.com/student.evergreenps.org/rebel/')">
+    Rebel Cloaked
+  </button>
+
+  <script>
+    function openSmallWindow(url) {
+      window.open(url, 'RebelWindow', 'width=800,height=600,resizable=yes');
+    }
+  </script>
+
+</body>
+</html>
