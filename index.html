@@ -54,7 +54,7 @@
 <script>
 function openIframeWindow() {
   // ← change this to your desired URL
-  const targetUrl = "https://example.com";
+  const targetUrl = "https://vexacloud.github.io/apps/main/index";
 
   const newWin = window.open("about:blank", "_blank", 
     "width=1200,height=800,resizable=yes,scrollbars=yes"
@@ -71,7 +71,7 @@ function openIframeWindow() {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Loading…</title>
+      <title>VexaCloud</title>
       <style>
         body {
           margin:0;
@@ -102,7 +102,7 @@ function openIframeWindow() {
       </style>
     </head>
     <body>
-      <div class="loader" id="ld">Loading ${targetUrl}...</div>
+      <div class="loader" id="ld">Please close the tab you opened this from!</div>
       <iframe src="${targetUrl}" allowfullscreen></iframe>
 
       <script>
